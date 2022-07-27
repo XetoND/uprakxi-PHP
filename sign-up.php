@@ -42,6 +42,7 @@
   </style>
 </head>
 <body>
+    
 <center>
     <h1>Sign Up</h1>
 </center>
@@ -60,6 +61,15 @@
             <tr>
                 <td>Password</td>
                 <td><input type="password" name="password" placeholder="Password" required></td>
+            </tr>
+            <tr>
+                <td>Posisi</td>
+                <td><select name="posisi" required>
+                  <option value="Pilih">Pilih Salah Satu</option>
+                  <option value="Murid">Murid</option>
+                  <option value="Guru">Guru</option>
+                </select>
+                </td>
             </tr>
             <tr>
                 <td></td>
