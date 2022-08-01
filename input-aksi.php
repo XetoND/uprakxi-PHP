@@ -11,5 +11,5 @@ $nisn = $_POST['nisn'];
 mysqli_query($host, "INSERT INTO siswa(nama_lengkap,jenis_kelamin,jurusan,nis,nisn)
 VALUE('$nama_lengkap','$jenis_kelamin','$jurusan','$nis','$nisn')");
 
-header("location:index.php");
+header("location:page_guru.php");
 ?>

@@ -1,3 +1,11 @@
+<?php 
+session_start();
+
+  if($_SESSION['posisi']==""){
+    header("location:login.php");
+  }
+?>
+
 <html lang="en">
 <head>
     <title>Update Data</title>

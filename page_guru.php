@@ -1,3 +1,11 @@
+<?php 
+session_start();
+
+  if($_SESSION['posisi']==""){
+    header("location:login.php");
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -28,6 +36,10 @@
             table.table tr td{
               padding: 10px 20px ;
             }
+            .tombol1{
+              text-align: right;
+              margin-bottom: 20px;
+            }
             .tombol{
               text-align: right;
             }
@@ -45,6 +57,9 @@
         <center>
         <h1>Data Siswa</h1>
         </center>
+        <div class="tombol1">
+        <a class="btn btn-outline-danger" href="logout.php" role="button">Log out</a>
+        </div>
         <div class="tombol">
         <a class="btn btn-outline-primary" href="input.php" role="button">Tambah Data Baru</a>
         </div>

@@ -14,4 +14,4 @@ SET nama_lengkap='$nama_lengkap',jenis_kelamin='$jenis_kelamin' ,jurusan='$jurus
 WHERE no='$no'");
 
 // pindah ke halaman index
-header("location:index.php");
+header("location:page_guru.php");
