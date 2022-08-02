@@ -52,5 +52,18 @@ function update($data) {
     return mysqli_affected_rows($host);
 }
 
+function signup($data) {
+    global $host;
+    var_dump($data);
+    $email = $_POST['email'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $posisi = $_POST['posisi'];
+    $create_date = date("Y-m-d");
 
+    mysqli_query($host, "INSERT INTO user(email,username,password,posisi,create_date)
+    VALUE('$email','$username','$password','$posisi','$create_date')");
+
+    return mysqli_affected_rows($host);
+}
 
